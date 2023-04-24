@@ -39,7 +39,22 @@ if __name__ == '__main__':
     index = index_documents(load_documents(), Index())
     print(f'Index contains {len(index.documents)} documents')
 
-    execute_search(index, 'London Beer Flood', search_type='AND')
-    execute_search(index, 'London Beer Flood', search_type='OR')
-    execute_search(index, 'London Beer Flood', search_type='AND', rank=True)
-    execute_search(index, 'London Beer Flood', search_type='OR', rank=True)
+    # execute_search(index, 'London Beer Flood', search_type='AND')
+    # execute_search(index, 'London Beer Flood', search_type='OR')
+    # execute_search(index, 'London Beer Flood', search_type='AND', rank=True)
+    # execute_search(index, 'London Beer Flood', search_type='OR', rank=True)
+
+    execute_search(index, 'Cabin Sky', search_type='AND')
+    execute_search(index, 'Cabin Sky', search_type='AND', rank=True)
+
+    execute_search(index, 'Carpenter-Smith', search_type='AND')
+    execute_search(index, 'Carpenter-Smith', search_type='AND', rank=True)
+
+    execute_search(index, 'Carpenter Smith', search_type='AND')
+    execute_search(index, 'Carpenter Smith', search_type='AND', rank=True)
+
+    execute_search(index, 'Chapel', search_type='AND')
+    execute_search(index, 'Chapel', search_type='AND', rank=True)
+
+    execute_search(index, 'Chapel Fire London', search_type='AND')
+    execute_search(index, 'Chapel Fire London', search_type='AND', rank=True)
